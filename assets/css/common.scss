@@ -1,0 +1,264 @@
+/* ======================================
+ Foundation
+====================================== */
+
+@import 'foundation/settings';
+@import 'foundation/mixin';
+@import 'foundation/reset';
+@import 'foundation/base';
+
+
+/* ======================================
+ Layout
+====================================== */
+
+.l-header {
+  width: 100%;
+  background-color: #fff;
+
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 0;
+  }
+
+  @include sp {
+
+    .logo {
+      width: 70%;
+    }
+
+  }
+
+}
+
+
+
+.l-container {
+  width: 1000px;
+  margin: 0 auto;
+
+  @include sp {
+    width: 95%;
+  }
+}
+
+.l-section {
+  margin-bottom: 64px;
+
+  .l-container {
+    background: url(../img/tree.png) right 10px top 20px no-repeat;
+    padding-top: 120px;
+  }
+}
+
+.l-title {
+  margin-bottom: 64px;
+
+  @include sp {
+    margin-bottom: 28px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 18px;
+
+    @include sp {
+      font-size: 22px;
+    }
+
+    .sub_title {
+      display: block;
+      font-size: 12px;
+      margin-top: 10px;
+    }
+  }
+
+  .shopinfo_block {
+    text-align: right;
+
+    @include sp {
+      text-align: center;
+    }
+
+
+  }
+
+  .shopinfo {
+    text-align: left;
+    font-size: 13px;
+    line-height: 1.5;
+
+    padding: 1em 2em;
+    display: inline-block;
+    border-radius: 3.8em 2.6em 2.8em 2.6em/3em 2em 3em 2em;
+    color: #fff;
+    background-color: #f5568c;
+
+
+
+    .home {
+      line-height: 1.7;
+      font-size: 20px;
+    }
+
+
+  }
+}
+
+.l-section:nth-of-type(odd) {
+  .l-image {
+    text-align: right;
+  }
+}
+
+
+.l-image {
+
+  .image {
+    position: relative;
+    width: 800px;
+    display: inline-block;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  .image:before {
+    content: '';
+    position: absolute;
+    width: 800px;
+    height: 100%;
+    background-image: radial-gradient(rgb(255, 240, 27) 30%, transparent 31%), radial-gradient(rgb(255, 240, 27) 30%, transparent 31%);
+    background-size: 6px 6px;
+    background-position: 0 0, 3px 3px;
+    z-index: -1;
+
+    @include sp {
+      width: 100%;
+    }
+  }
+
+  .image img {
+    width: 100%;
+  }
+
+}
+
+.l-text {
+  font-size: 16px;
+
+  .title {
+    font-size: 28px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+
+    @include sp {
+      font-size: 18px;
+    }
+  }
+
+  .text {
+    line-height: 2em;
+  }
+
+  .text+.text {
+    margin-top: 32px;
+  }
+
+
+}
+
+.l-main_block {
+  position: relative;
+  margin-bottom: 64px;
+
+
+}
+
+.l-text {
+  position: absolute;
+  top: 46px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.5em;
+
+  @include sp {
+    position: relative;
+  }
+}
+
+.l-section:nth-of-type(odd) {
+  .l-text {
+    left: 0;
+  }
+
+  .image:before {
+    right: -20px;
+    bottom: -20px;
+
+    @include sp {
+      right: -2%;
+      bottom: -4%;
+    }
+  }
+
+
+}
+
+.l-section:nth-of-type(even) {
+  .l-text {
+    right: 0;
+  }
+
+  .image:before {
+    left: -20px;
+    top: -20px;
+
+    @include sp {
+      left: -2%;
+      top: -4%;
+    }
+  }
+
+}
+
+.l-sub_block {
+  max-width: 1540px;
+  min-width: 1000px;
+  margin: 0 auto;
+
+  @include sp {
+    min-width: initial;
+  }
+}
+
+
+.l-footer {
+  background: #f5568c;
+  color: #fff;
+  text-align: center;
+  min-width: 1000px;
+  padding: 10px 0;
+
+  @include sp {
+    min-width: initial;
+  }
+}
+
+.pagetop {
+  width: 140px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+
+  @include sp {
+    width: 30%;
+    right: 3%;
+    bottom: 3%;
+  }
+}

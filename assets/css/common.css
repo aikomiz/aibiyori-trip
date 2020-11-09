@@ -1,0 +1,390 @@
+@charset "UTF-8";
+/* ======================================
+ Foundation
+====================================== */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #333;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #333;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100%;
+  font-size: medium;
+  font-family: "Noto Sans JP", 游ゴシック, "Yu Gothic", 游ゴシック体, YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", メイリオ, Meiryo, sans-serif;
+  line-height: 1.5;
+  letter-spacing: .05em;
+  word-break: break-all;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  height: 100%;
+  -webkit-font-feature-settings: "palt";
+          font-feature-settings: "palt";
+  color: #2c2c2c;
+  background-color: #ffffec;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+a {
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, strong {
+  font-weight: bold;
+}
+
+/* ======================================
+ Layout
+====================================== */
+.l-header {
+  width: 100%;
+  background-color: #fff;
+}
+
+.l-header .header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-header .logo {
+    width: 70%;
+  }
+}
+
+.l-container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .l-container {
+    width: 95%;
+  }
+}
+
+.l-section {
+  margin-bottom: 64px;
+}
+
+.l-section .l-container {
+  background: url(../img/tree.png) right 10px top 20px no-repeat;
+  padding-top: 120px;
+}
+
+.l-title {
+  margin-bottom: 64px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-title {
+    margin-bottom: 28px;
+  }
+}
+
+.l-title .title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-title .title {
+    font-size: 22px;
+  }
+}
+
+.l-title .title .sub_title {
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.l-title .shopinfo_block {
+  text-align: right;
+}
+
+@media screen and (max-width: 767px) {
+  .l-title .shopinfo_block {
+    text-align: center;
+  }
+}
+
+.l-title .shopinfo {
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.5;
+  padding: 1em 2em;
+  display: inline-block;
+  border-radius: 3.8em 2.6em 2.8em 2.6em/3em 2em 3em 2em;
+  color: #fff;
+  background-color: #f5568c;
+}
+
+.l-title .shopinfo .home {
+  line-height: 1.7;
+  font-size: 20px;
+}
+
+.l-section:nth-of-type(odd) .l-image {
+  text-align: right;
+}
+
+.l-image .image {
+  position: relative;
+  width: 800px;
+  display: inline-block;
+}
+
+@media screen and (max-width: 767px) {
+  .l-image .image {
+    width: 100%;
+  }
+}
+
+.l-image .image:before {
+  content: '';
+  position: absolute;
+  width: 800px;
+  height: 100%;
+  background-image: radial-gradient(#fff01b 30%, transparent 31%), radial-gradient(#fff01b 30%, transparent 31%);
+  background-size: 6px 6px;
+  background-position: 0 0, 3px 3px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 767px) {
+  .l-image .image:before {
+    width: 100%;
+  }
+}
+
+.l-image .image img {
+  width: 100%;
+}
+
+.l-text {
+  font-size: 16px;
+}
+
+.l-text .title {
+  font-size: 28px;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 767px) {
+  .l-text .title {
+    font-size: 18px;
+  }
+}
+
+.l-text .text {
+  line-height: 2em;
+}
+
+.l-text .text + .text {
+  margin-top: 32px;
+}
+
+.l-main_block {
+  position: relative;
+  margin-bottom: 64px;
+}
+
+.l-text {
+  position: absolute;
+  top: 46px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 1.5em;
+}
+
+@media screen and (max-width: 767px) {
+  .l-text {
+    position: relative;
+  }
+}
+
+.l-section:nth-of-type(odd) .l-text {
+  left: 0;
+}
+
+.l-section:nth-of-type(odd) .image:before {
+  right: -20px;
+  bottom: -20px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-section:nth-of-type(odd) .image:before {
+    right: -2%;
+    bottom: -4%;
+  }
+}
+
+.l-section:nth-of-type(even) .l-text {
+  right: 0;
+}
+
+.l-section:nth-of-type(even) .image:before {
+  left: -20px;
+  top: -20px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-section:nth-of-type(even) .image:before {
+    left: -2%;
+    top: -4%;
+  }
+}
+
+.l-sub_block {
+  max-width: 1540px;
+  min-width: 1000px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .l-sub_block {
+    min-width: initial;
+  }
+}
+
+.l-footer {
+  background: #f5568c;
+  color: #fff;
+  text-align: center;
+  min-width: 1000px;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .l-footer {
+    min-width: initial;
+  }
+}
+
+.pagetop {
+  width: 140px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+}
+
+@media screen and (max-width: 767px) {
+  .pagetop {
+    width: 30%;
+    right: 3%;
+    bottom: 3%;
+  }
+}
+/*# sourceMappingURL=common.css.map */
