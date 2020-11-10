@@ -100,12 +100,15 @@ $arrays	= array(
   <meta name="format-detection" content="telephone=no">
   <title>洞爺湖編 | あいびより</title>
   <meta name="description" content="洞爺湖に旅行に行った時の思い出です。道の駅あぷたのレストランで食べたうに丼、洞爺湖ロングラン花火大会など・・・">
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/common.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="assets/js/common.js"></script>
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="shortcut icon" href="assets/img/common/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/img/common/apple-touch-icon.png">
+
 
   <script>
     $(function(){
